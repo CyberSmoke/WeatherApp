@@ -5,7 +5,7 @@ body {
   font-size: 16px;
 }
 
-header{
+header {
   background-color: #3498db;
   padding: 30px;
   width: 100%;
@@ -15,37 +15,75 @@ header{
   color: #f1c40f;
 }
 
-.weather-list{
+.weather-list {
   margin: 20px auto;
   width: 40%;
 }
 
-.weather-element{
+.weather-element {
   box-shadow: 1px 1px 6px #ccc;
   padding: 10px;
   margin: 10px 0;
 }
 
-.main,
-header nav{
-  width: 75%;
-  margin: 32px auto;
+.tooltip {
+  position: absolute;
+  padding: 3px;
+  font-size: 12px;
+  background-color: #eee;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  text-align: left;
 }
 
-header nav a {
-  color: #233dcb;
-  text-decoration: none;
+.temperature {
+  cursor: default;
+}
+
+.info {
+  color: rgba(95, 95, 95, 0.51);
   font-weight: bold;
 }
 
-header nav a:hover,
-header nav a:active{
-  color: #41abf2;
+
+.weather-search {
+  margin: 20px auto;
+  width: 40%;
+  text-align: center;
+
+label {
+  font-weight: bold;
+  margin-right: 20px;
 }
 
-.pipes{
-  margin: 32px 0;
-  padding: 16px;
-  background-color: #eee;
-  border: 1px solid #ccc;
+button, input {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+input {
+  padding: 3px 5px;
+  outline: none;
+  width: 50%;
+  margin-right: 20px;
+}
+
+button {
+  background-color: #2ecc71;
+  border: none;
+  padding: 4px 8px;
+  box-shadow: 1px 1px 1px #95a5a6;
+  cursor: pointer;
+  color: white;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .weather-list {
+    width: 80%;
+  }
 }
