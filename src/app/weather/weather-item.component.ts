@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {WeatherItem} from "./weather-item";
 
 @Component({
@@ -15,10 +15,9 @@ import {WeatherItem} from "./weather-item";
     </article>
   `,
   styleUrls: ['./../../weather-item.css']
+  //inputs: ['weatherItem: item']
 })
 export class WeatherItemComponent{
+  @Input('item')
   weatherItem: WeatherItem;
-  constructor(){
-    this.weatherItem = new WeatherItem('London', 'RAINY', 4);
-  }
 }
